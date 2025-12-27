@@ -14,8 +14,7 @@
 		document.body.appendChild(link);
 		link.click();
 
-		// To make this work on Firefox we need to wait
-		// a little while before removing it.
+		// waits before removing for Firefox.
 		setTimeout(() => {
 			URL.revokeObjectURL(link.href);
 			link.parentNode.removeChild(link);
@@ -32,10 +31,9 @@
 	</header>
 	<br>
 	<div class="links">
+		<button onclick={openInNewTab("mailto:iyansyeedmiller@gmail.com")} class="bioLink"><i class="fas fa-envelope"></i> <span>Iyansyeedmiller@gmail.com</span></button>
 		<button onclick={openInNewTab("https://github.com/Fireg53")} class="bioLink"><i class="fab fa-github"></i><span>Fireg53</span></button>
 		<button onclick={openInNewTab("https://www.youtube.com/@fireg5355")} class="bioLink"><i class="fab fa-youtube"></i> <span>Fireg5355</span></button>
-		<button onclick={openInNewTab("https://www.instagram.com/iyan.in3d/")} class="bioLink"><i class="fab fa-instagram"></i>Iyan.in3d</button>
-		<button onclick={openInNewTab("mailto:iyansyeedmiller@gmail.com")} class="bioLink"><i class="fas fa-envelope"></i> <span>Iyansyeedmiller@gmail.com</span></button>
 	</div>
 	<div class="bodyContainer">
 		<div class="resumeBorder gradient">

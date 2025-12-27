@@ -17,34 +17,28 @@
 </script>
 
 <nav>
-   <div class='bar short'>
-      <!--
+   <div class='bar short'> 
       {#if $page.url.pathname === '/'}
          <a href="/" class="deactivated">Home</a>
       {:else}
          <a href="/">Home</a>
       {/if}
-      -->
    </div>
 
    <div class='bar med'>
-      <!--
-      {#if $page.url.pathname === '/portfolio'}
-         <a href="/portfolio" class="deactivated">Portfolio</a>
+      {#if $page.url.pathname === '/code'}
+         <a href="/code" class="deactivated">Code</a>
       {:else}
-         <a href="/portfolio">Portfolio</a>
+         <a href="/code">Code</a>
       {/if}
-      -->
    </div>
 
-   <div class='bar long'>
-      <!--
-      {#if $page.url.pathname === '/games'}
-         <a href="/games" class="deactivated">Games</a>
+   <div class='bar long'> 
+      {#if $page.url.pathname === '/3dArt'}
+         <a href="/3dArt" class="deactivated">3D Art</a>
       {:else}
-         <a href="/games">Games</a>
+         <a href="/3dArt">3D Art</a>
       {/if}
-      -->
    </div>
 </nav>
 
