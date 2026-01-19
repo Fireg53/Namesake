@@ -22,12 +22,12 @@
             <p class="desc">icon</p>
         </div>
         <div class="cell">
-            <video class="artwork" src="art/solarSoup.mov" alt="Planets Orbiting In Solar Ocean Animation" autoplay loop muted><track kind="captions"></video>
+            <video class="artwork" src="art/solarSoup.mov" alt="Planets Orbiting In Solar Ocean Animation" autoplay loop muted webkit-playsinline playsinline><track kind="captions"></video>
             <p class="title">Solar Soup</p>
             <p class="desc">animation, simulation</p>
         </div>
         <div class="cell">
-            <video class="artwork" src="art/oshkosh_v3.mp4" alt="Cell Shaded Train Animation" autoplay loop muted><track kind="captions"></video>
+            <video class="artwork" src="art/oshkosh_v3.mp4" alt="Cell Shaded Train Animation" autoplay loop muted webkit-playsinline playsinline><track kind="captions"></video>
             <p class="title">Osh Kosh</p>
             <p class="desc">animation, cell Shading</p>
         </div>

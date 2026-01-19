@@ -31,8 +31,9 @@
 	<br>
 	<div class="links">
 		<button onclick={openInNewTab("mailto:iyansyeedmiller@gmail.com")} class="bioLink"><i class="fas fa-envelope"></i> <span>Iyansyeedmiller@gmail.com</span></button>
-		<button onclick={openInNewTab("https://github.com/Fireg53")} class="bioLink"><i class="fab fa-github"></i><span>Fireg53</span></button>
-		<button onclick={openInNewTab("https://www.youtube.com/@fireg5355")} class="bioLink"><i class="fab fa-youtube"></i> <span>Fireg5355</span></button>
+		<button onclick={openInNewTab("https://github.com/Fireg53")} class="bioLink"><i class="fa-brands fa-linkedin"></i><span>LinkedIn</span></button>
+		<button onclick={openInNewTab("https://github.com/Fireg53")} class="bioLink"><i class="fab fa-github"></i><span>GitHub</span></button>
+		<button onclick={openInNewTab("https://www.youtube.com/@fireg5355")} class="bioLink"><i class="fab fa-youtube"></i> <span>Youtube</span></button>
 	</div>
 	<div class="bodyContainer">
 		<div class="resumeBorder gradient">
@@ -147,7 +148,7 @@
 		color: #FFFFFF;
 		display: flex;
 		font-family: Phantomsans, sans-serif;
-		font-size: 1em;
+		font-size: 1.5rem;
 		justify-content: center;
 		column-gap: 0.5em;
 		padding: 8px 12px; 
@@ -229,6 +230,10 @@
 			font-size: 8vw;
 			line-height: 10vw;
 			text-align: center;
+		}
+
+		.bioLink {
+			font-size: 1.2em;
 		}
 	}
 
