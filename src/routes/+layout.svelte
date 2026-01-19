@@ -145,33 +145,33 @@
 		.home {
 			background-color: #e6bccd;
 			box-shadow: 1px 1px 4px #c787a1;
-			width: 80vw;
+			width: 87vw;
 			transition: width ease 0.5s;
 		}
 		.home:not(.deactivated):hover {
-			width: calc(80vw + 0.4rem);
+			width: calc(87vw + 0.4rem);
          height: 3rem;
 		}
 
 		.code {
 			background-color: #d295bf;
 			box-shadow: 1px 1px 4px #94566e;
-			width: 55vw;
+			width: 62vw;
 			transition: width ease 0.5s;
 		}
 		.code:not(.deactivated):hover {
-			width: calc(55vw + 0.4rem);
+			width: calc(62vw + 0.4rem);
          height: 3rem;
 		}
 
 		.art {
 			background-color: #7e52a0;
 			box-shadow: 1px 1px 4px #2e1542;
-			width: 30vw;
+			width: 37vw;
 			transition: width ease 0.5s;
 		}
 		.art:not(.deactivated):hover {
-			width: calc(30vw + 0.4rem);
+			width: calc(37vw + 0.4rem);
          height: 3rem;
 		}
       .bar > a {

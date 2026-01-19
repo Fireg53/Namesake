@@ -31,7 +31,7 @@
 	<br>
 	<div class="links">
 		<button onclick={openInNewTab("mailto:iyansyeedmiller@gmail.com")} class="bioLink"><i class="fas fa-envelope"></i> <span>Iyansyeedmiller@gmail.com</span></button>
-		<button onclick={openInNewTab("https://github.com/Fireg53")} class="bioLink"><i class="fa-brands fa-linkedin"></i><span>LinkedIn</span></button>
+		<button onclick={openInNewTab("https://www.linkedin.com/in/iyan-syeed-miller/")} class="bioLink"><i class="fa-brands fa-linkedin"></i><span>LinkedIn</span></button>
 		<button onclick={openInNewTab("https://github.com/Fireg53")} class="bioLink"><i class="fab fa-github"></i><span>GitHub</span></button>
 		<button onclick={openInNewTab("https://www.youtube.com/@fireg5355")} class="bioLink"><i class="fab fa-youtube"></i> <span>Youtube</span></button>
 	</div>
