@@ -26,8 +26,7 @@
 	<br>
 	<br>
 	<header>
-		<h1>Iyan</h1>
-		<h1>Syeed-Miller</h1>
+		<h1>Iyan <br>Syeed-Miller</h1>
 	</header>
 	<br>
 	<div class="links">
@@ -63,7 +62,7 @@
 			"YEAR" 1979;
 		color: #29274C;
 		font-size: 6.5vw;
-		line-height: 2rem;
+		line-height: 8rem;
 		margin-left: 5%;
 		margin-right: 10%;
 		margin-top: 4rem;
@@ -71,24 +70,11 @@
 	.links{
 		display: flex;
 		column-gap: 2rem;
+		row-gap: 2rem;
+		flex-wrap: wrap;
 		color: #29274C;
 		margin-left: 5%;
 	}
-
-	@media (max-width: 800px) {
-		.bodyContainer{
-			flex-direction: column;
-		}
-		.thumbnailContainer{
-			flex-direction: row;
-		}
-	}
-	@media (min-width: 801px) {
-		.thumbnailContainer{
-			flex-direction: column;
-		}
-	}
-
 
 	.bodyContainer{
 		display: flex;
@@ -141,7 +127,7 @@
 		font-family: "Fugaz One", sans-serif;
 		font-weight: 400;
 		font-style: normal;
-		font-size: 1.5vw;
+		font-size: 1.5rem;
 		line-height: 0.2vw;
 
 	}
@@ -152,27 +138,27 @@
 		cursor: pointer;
 	}
 	.bioLink {
-	align-items: center;
-	background-image: linear-gradient(144deg,#E6BCCD, #D295BF 20%, #7E52A0);
-	border: 0;
-	border-radius: 8px;
-	box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
-	box-sizing: border-box;
-	color: #FFFFFF;
-	display: flex;
-	font-family: Phantomsans, sans-serif;
-	font-size: 1em;
-	justify-content: center;
-	column-gap: 0.5em;
-	max-width: 30%;
-	min-width: 2em;
-	padding: 8px 12px; 
-	text-decoration: none;
-	user-select: none;
-	touch-action: manipulation;
-	white-space: nowrap;
-	cursor: pointer;
-	transition: box-shadow ease 0.5s;
+		align-items: center;
+		background-image: linear-gradient(144deg,#E6BCCD, #D295BF 20%, #7E52A0);
+		border: 0;
+		border-radius: 8px;
+		box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+		box-sizing: border-box;
+		color: #FFFFFF;
+		display: flex;
+		font-family: Phantomsans, sans-serif;
+		font-size: 1em;
+		justify-content: center;
+		column-gap: 0.5em;
+		padding: 8px 12px; 
+		text-decoration: none;
+		user-select: none;
+		touch-action: manipulation;
+		white-space: nowrap;
+		cursor: pointer;
+		transition: box-shadow ease 0.5s;
+		margin-left: 20px;
+		margin-right: 20px;
 	}
 
 	.bioLink:active,
@@ -181,7 +167,7 @@
 	}
 
 	/*Page Transitions*/
-	:root {
+	/* :root {
 	--paperAngle: 20deg;
 	}
 
@@ -217,7 +203,7 @@
 
 
 	:root::view-transition-old(root) {
-	z-index: 1; /* Behind the new page */
+	z-index: 1; 
 	animation: 3000ms;
 	}
 
@@ -227,6 +213,23 @@
 		1000ms cubic-bezier(0.4, 0, 0.2, 1) spin,
 		210ms cubic-bezier(0, 0, 0.2, 1) 90ms fade-in,
 		1000ms cubic-bezier(0.4, 0, 0.2, 1) slide-from-bottom;
+	} */
+
+	@media screen and (max-width: 1160px) {
+		header {
+			margin-top: 14rem;
+		}
+
+		.links {
+			justify-content: space-around;
+			margin-left: 0;
+		}
+
+		h1 {
+			font-size: 8vw;
+			line-height: 10vw;
+			text-align: center;
+		}
 	}
 
 </style>

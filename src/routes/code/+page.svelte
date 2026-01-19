@@ -1,71 +1,132 @@
 <div class="page">
-    <h1>Programming</h1>
+    <h1>PROGRAMMING</h1>
     <br>
     <div class="codeGrid">
-        <div class="cell namesake"><img class="thumbnail"src="namesakeThumb.png"><a href="https://github.com/Fireg53/Namesake">This Site</a></div>
-        <div class="cell robotics"><img class="thumbnail"src="eventBookThumb.png"><a href="https://github.com/IFC-Robotics/Center-Stage_2023-2024">Computer Vision</a></div>
-        <div class="cell eventBooking"><img class="thumbnail"src="eventBookThumb.png"><a href="https://github.com/ElliottCepin/event-booking">Event Booking Demo Site</a></div>       
+        <div class="cell"><img class="thumbnail"src="codeThumbnails/namesakeThumb.png" alt="This Site Thumbnail">
+            <a href="https://github.com/Fireg53/Namesake">This Site</a>
+            <div class="icon-row"><i class="fa-brands fa-html5 HTML-icon"></i><i class="fa-brands fa-css CSS-icon"></i><i class="fa-brands fa-square-js JS-icon"></i></div>
+        </div>
+        <div class="cell"><img class="thumbnail"src="codeThumbnails/visionportal.png" alt="Computer Vision Thumbnail">
+            <a href="https://github.com/IFC-Robotics/Center-Stage_2023-2024">Computer Vision</a>
+            <div class="icon-row"><i class="fa-brands fa-java Java-icon"></i></div>
+        </div>
+        <div class="cell"><img class="thumbnail"src="codeThumbnails/summerGame.png" alt="Summer Game Thumbnail">
+            <a href="https://github.com/Fireg53/Summer-Game">Summer Game</a>
+            <div class="icon-row"><i class="fa-brands fa-html5 HTML-icon"></i><i class="fa-brands fa-css CSS-icon"></i><i class="fa-brands fa-square-js JS-icon"></i></div>
+        </div>       
+        <div class="cell"><img class="thumbnail"src="codeThumbnails/eventBookerThumb.png" alt="Event Booking Thumbnail">
+            <a href="https://github.com/ElliottCepin/event-booking">Event Booking Demo Site</a>
+            <div class="icon-row"><i class="fa-brands fa-html5 HTML-icon"></i><i class="fa-brands fa-css CSS-icon"></i><i class="fa-brands fa-square-js JS-icon"></i></div>
+        </div>      
+
     </div>
 </div>
 
 <style>
+    
     h1 {
-        font-family: "Climate Crisis", sans-serif;
+        padding-left: 20px;
+        color: black;
+        text-shadow: grey 1px 1px 2px;
     }
     .page{
-        height: 98vh;
-        width: 100%;
-        background-image: url(paper.png);
+        height: calc(100vh - 40px);
+        width: calc(100vw - 40px);
         padding: 20px;
-    }
-    .codeGrid {
-        margin-top: 200px;
-        display: grid;
-        grid-template-columns: auto auto auto;
-        margin-left: 20px;
-        width: 70vw;
-    }
-    .page {
-        color: white;
-        font-family: "Fugaz One", sans-serif;
 
     }
-    a {
-        color: #D295BF;
-        text-decoration: none;
-        padding-top: 10px;
+    .codeGrid {
+        width: 60vw;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:space-between;
+        margin-left: 10vw;
     }
-    a:not(.deactivated):hover {
-        text-decoration: underline;
-    }
-    .thumbnail {
-        width: 200px;
-        height: 100px;
-    }
+    
     .cell {
-        width: 200px;
+        --divider-width: 2px; /* width of line between thumbnail and text */
         display: flex;
         flex-direction: column;
-        outline: 4px solid #E6BCCD;
         align-items: center;
         text-align: center;
         background-color: white;
         position: relative;
-        padding: 10px;
-        z-index: 1;
+        margin: 20px;
+        z-index: 0;
+        border: 4px solid #4c286a;
         border-radius: 10px;
-        
+        box-shadow: 3px 3px 10px;
     }
 
+    /* for rounded border */
     .cell::after {
         content:"";
+        width: 300px;
+        height: 180px;
         position: absolute;
-        background-color: white;
-        border-radius: 10px;
-        width: 180px;
-        left: 0px;
-        top: 0px;
-        z-index: -1;
+        border: 4px solid #4c286a;
+        border-bottom-width: var(--divider-width);
+        border-radius: 10px 10px 0px 0px;
+        left: -4px;
+        top: -4px;
+        z-index: 1;
     }
 
+    .thumbnail {
+        width: 300px;
+        height: 180px;
+        margin-bottom: var(--divider-width);
+    }
+
+    a {
+        color: var(--template-purple);
+        padding-top: 10px;
+        padding: 5px;
+
+    }
+    a:not(.deactivated):hover {
+        text-decoration: underline;
+    }
+
+    .icon-row > i{
+        margin: 3px;
+        font-size: 20px;
+    }
+
+    .HTML-icon {
+        color: red;
+    }
+
+    .CSS-icon {
+        color: blue;
+    }
+    
+    .JS-icon {
+        color:yellow; 
+        box-shadow: 
+            inset white -1px -3px, 
+            inset white 2px 2px, 
+            inset black -10px -10px;
+    }
+
+    .Java-icon {
+        color: darkred;
+    }
+
+    @media screen and (max-width: 1160px) {
+        h1 {
+            margin-top: 14rem;
+            text-align: center;
+        }
+        .codeGrid {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content:space-around;
+            align-items: center;
+            margin-left: 0;
+        }
+    }
 </style>
